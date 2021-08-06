@@ -12,7 +12,7 @@ function searchCities(city_name){
     .then(response => response.json())
     .then(data => {
         
-        if(data.cod == 400){
+        if(data.cod != 400){
             alert("Please Enter Correct City.");
             return;
         }
